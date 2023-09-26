@@ -1,0 +1,132 @@
+
+/*--------------- Variables -------------*/
+:root{
+    /* --background-color: #e0e0e0; */
+    --background-color: #4158D0;
+    --background-imge: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    --primary-color: #e0e0e0;
+    --secondary-color: #b7a9c4;
+    --font-color: #363636;
+    --padding-medium: 1rem;
+    --padding-small: 0.5rem;
+    --padding-large: 2rem;
+}
+body{
+    background: rgb(63,94,251);
+background: linear-gradient(117deg, rgba(63, 94, 251, 0.9) 0%, rgba(252, 70, 106, 0.9) 100%);
+    color: var(--font-color);
+}
+
+header{
+    z-index: 10;
+    
+    background-color: var(--primary-color);
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    padding: var(--padding-small);
+    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.28);;
+}
+header h1 {
+    font-weight: 300;
+}
+header h1:hover{
+  
+    /* text-shadow: 2px 3px 2px rgba(153, 153, 153, 0.65); */
+}
+main{
+    height: 100vh;
+    /* border:2px solid #ffe260 ; */
+    padding: var(--padding-large);
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-large);
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.quiz-card{
+    /* border:2px solid #4e4e4e ; */
+    border-radius: 20px;
+    background: #e0e0e0;
+    transform: translate(0px, 0px) rotate(0deg);
+    transition: 0.2s;
+    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+
+    padding: var(--padding-medium);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--padding-medium);
+}
+.quiz-card h2 {
+    font-weight: 700;
+    font-size: 1.7rem;
+     text-shadow: 2px 3px 2px rgba(94, 143, 158, 0.25);
+}
+.quiz-card:hover{
+    /* border:2px solid #4e4e4e ; */
+    border-radius: 20px;
+    /* border-radius: 50px; */
+    background: #e0e0e0;
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+}
+.bookmark-button{
+    align-self: flex-end;
+}
+.bookmark-button img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.hastags{
+    /* align-self: flex-start; */
+}
+.hastags span{
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    padding: 0rem 0.5rem;
+    background: #cfcfcf;
+    box-shadow: inset 20px 20px 60px #9b9b9b,
+                inset -20px -20px 60px #ffffff;
+}
+footer{
+    z-index: 10;
+    background-color: var(--primary-color);
+    position: sticky;
+    bottom: 0px;
+    
+}
+nav{
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: stretch; */
+    /* padding: var(--padding-medium); */
+    /* flex-basis: ; */
+}
+nav a{
+    display: flex;
+    justify-content: space-around;
+        padding: var(--padding-medium);
+    width: 100%;
+    /* border:1px solid #0f7c14 ; */
+}
+nav a:hover{
+
+    border:2px solid rgb(201, 201, 201);
+}
+nav a.current{
+    background-color: #e0e8ef;;
+}
+nav a img{
+    /* border:1px solid #FFCC70 ; */
+    
+    height: 1.7rem;
+
+}
+.profile-container {
+    background-color: #e0e0e0da;
+    border-radius: 20px;
+    margin: var(--padding-medium);
+}
+
