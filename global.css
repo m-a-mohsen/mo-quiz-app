@@ -19,15 +19,20 @@ background: linear-gradient(117deg, rgba(63, 94, 251, 0.9) 0%, rgba(252, 70, 106
 
 header{
     z-index: 10;
+    
     background-color: var(--primary-color);
     position: sticky;
     top: 0px;
     text-align: center;
-    padding: var(--padding-medium);
+    padding: var(--padding-small);
     box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.28);;
 }
+header h1 {
+    font-weight: 300;
+}
 header h1:hover{
-    text-shadow: 2px 3px 2px rgba(153, 153, 153, 0.65);;
+  
+    /* text-shadow: 2px 3px 2px rgba(153, 153, 153, 0.65); */
 }
 main{
     height: 100vh;
@@ -54,7 +59,11 @@ main{
     justify-content: space-between;
     align-items: center;
     gap: var(--padding-medium);
-
+}
+.quiz-card h2 {
+    font-weight: 700;
+    font-size: 1.7rem;
+     text-shadow: 2px 3px 2px rgba(94, 143, 158, 0.25);
 }
 .quiz-card:hover{
     /* border:2px solid #4e4e4e ; */
@@ -114,5 +123,10 @@ nav a img{
     
     height: 1.7rem;
 
+}
+.profile-container {
+    background-color: #e0e0e0da;
+    border-radius: 20px;
+    margin: var(--padding-medium);
 }
 
