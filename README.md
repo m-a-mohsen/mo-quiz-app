@@ -1,5 +1,27 @@
 # Recap Project I: Quiz App - Layout
 
+## Things I borrowed:
+
+- background grediant
+- button style
+- neumorph style for hastags
+-
+
+## Things I found difficult :
+
+- bookmark position
+- growing flex item to fill empty space
+-
+
+## What could improve:
+
+- design
+- use animated logos
+- positioning control
+- maybe use Tailwind as design guardrail
+
+---
+
 In this project you will build the layout of your first mobile web application, a quiz app. In later
 projects we will expand this app and add all sorts of cool functionality. In this app you will be
 able to:
@@ -100,4 +122,3 @@ quiz-app
 
 - Unzip the file to get the `resources` folder.
 - Copy them into your app's main directory.
-
