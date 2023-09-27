@@ -2,24 +2,28 @@
 
 ## Things I borrowed:
 
-- background grediant
-- button style
-- neumorph style for hastags
--
+- background grediant; https://cssgradient.io/
+- button style; https://uiverse.io/barisdogansutcu/black-duck-67
+- neumorph style for hastags; https://neumorphism.io/#e0e0e0
 
 ## Things I found difficult :
 
+- designing with CSS
 - bookmark position
 - growing flex item to fill empty space
--
 
 ## What could improve:
 
 - design
-- use animated logos
-- positioning control
+- use animated logos; https://www.flaticon.com/search?word=home&type=animated-icon
+- more positioning control
 - maybe use Tailwind as design guardrail
 
+## what I learned
+- using excalidarw
+
+## TODO:
+- [x] split code
 ---
 
 In this project you will build the layout of your first mobile web application, a quiz app. In later
