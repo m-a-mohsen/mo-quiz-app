@@ -1,64 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <title>📔Bookmarks</title>
-</head>
-<body>
-    <header>
-        <h1>📔Quiz App</h1>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">📔Quiz App</h1>
     </header>
     <main class="profile-container">
-
-        <article class="profile-card">
-            <div class="profile-card-pic">
-                <img src="./icons/profile.png" alt="profile picture">
-                <!-- <h2>Mad Max</h2>
+      <div class="profile-card">
+        <div class="profile-card-pic">
+          <img src="./icons/profile.png" alt="profile picture" />
+          <!-- <h2>Mad Max</h2>
                 <h2>༺GimƐnä༻</h2>
                 <h2>༺Ɛl_ʙäbä༻</h2>
                 <h2>ヅ Eʅ_ɃȺʙȺ</h2> -->
-                <h2>ヅ GimƐnä</h2>
-            </div>
-            <div class="profile-card-about">
-                <h3>About me</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime velit aliquid doloribus libero reiciendis numquam facilis, autem itaque tempora repudiandae.</p>
-            </div>
-            <div class="profile-card-button">
-                <button class="button-flex">
-                    <img class="profile-card-button-img" src="./icons/question.png" alt="question icon">
-                    <span>12</span>
-                </button>
-                <button class="button-flex">
-                    <img class="profile-card-button-img" src="./icons/bookmark.png" alt="bookmark icon">
-                    <span>4</span>
-                </button>
-            </div>
-            <div class="profile-card-setting">
-                <h3>Settings</h3>
-                <div class="profile-card-setting-dark">
-                    <h4>Dark mode</h4>
-                    <input type="checkbox" name="dark" id="">
-                </div>
-            </div>
-        </article>
+          <h2>ヅ GimƐnä</h2>
+        </div>
+        <div class="profile-card-about">
+          <h3>About me</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
+            velit aliquid doloribus libero reiciendis numquam facilis, autem
+            itaque tempora repudiandae.
+          </p>
+        </div>
+        <div class="profile-card-button">
+          <button class="button-flex">
+            <img
+              class="profile-card-button-img"
+              src="./icons/question.png"
+              alt="question icon"
+            />
+            <span>12</span>
+          </button>
+          <button class="button-flex">
+            <img
+              class="profile-card-button-img"
+              src="./icons/bookmark.png"
+              alt="bookmark icon"
+            />
+            <span>4</span>
+          </button>
+        </div>
+        <div class="profile-card-setting">
+          <h3>Settings</h3>
+          <div class="profile-card-setting-dark">
+            <h4>Dark mode</h4>
+            <input type="checkbox" name="dark" id="" />
+          </div>
+        </div>
+      </div>
     </main>
-    <footer>
-        <nav>
-            <a class="home-link" href="./index.html">
-                <img src="./icons/home.png" alt="Home icon"></img>
-            </a>
-            <a class="bookmark-link" href="./bookmarks.html">
-                <img src="./icons/bookmark_transparent.png" alt="bookmark icon">
-            </a>
-            <a class="profile-class current" href="./profile.html">
-                <img src="./icons/profile_filled.png" alt="profile icon">
-            </a>
-        </nav>
+    <footer class="footer">
+      <nav class="nav">
+        <a class="nav__link" href="./index.html">
+          <img
+            class="nav__icon"
+            src="./icons/home.png"
+            alt="Home icon"
+          />
+        </a>
+        <a class="nav__link" href="./bookmarks.html">
+          <img
+            class="nav__icon"
+            src="./icons/bookmark_transparent.png"
+            alt="bookmark icon"
+          />
+        </a>
+        <a class="nav__link nav--current" href="./profile.html">
+          <img class="nav__icon" src="./icons/profile_filled.png" alt="profile icon" />
+        </a>
+      </nav>
     </footer>
-</body>
+  </body>
 </html>
