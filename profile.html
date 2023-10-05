@@ -17,46 +17,46 @@
       <h1 class="header__title">📔Quiz App</h1>
     </header>
     <main class="main">
-      <div class="profile-container">
-        <div class="profile-card-pic">
-          <img src="./icons/profile.png" alt="profile picture" />
+      <div class="profile-card">
+        <div class="profile-card__pic-section">
+          <img class="profile-card__pic-section__img" src="./assets/ai_cat.jpg" alt="profile picture" />
           <!-- <h2>Mad Max</h2>
                 <h2>༺GimƐnä༻</h2>
                 <h2>༺Ɛl_ʙäbä༻</h2>
                 <h2>ヅ Eʅ_ɃȺʙȺ</h2> -->
-          <h2>ヅ GimƐnä</h2>
+          <h2 class="profile-card__pic-section__name">ヅ GimƐnä</h2>
         </div>
-        <div class="profile-card-about">
-          <h3>About me</h3>
-          <p>
+        <div class="profile-card__about-section">
+          <h3 class="profile-card__about-section__title">About me</h3>
+          <p class="profile-card__about-section__paragraph">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
             velit aliquid doloribus libero reiciendis numquam facilis, autem
             itaque tempora repudiandae.
           </p>
         </div>
-        <div class="profile-card-button">
-          <button class="button-flex">
+        <div class="profile-card__button-group">
+          <button class="profile-card__button--flex">
             <img
-              class="profile-card-button-img"
+              class="profile-card__button__icon"
               src="./icons/question.png"
               alt="question icon"
             />
-            <span>12</span>
+            <span class="profile-card__button__counter">12</span>
           </button>
-          <button class="button-flex">
+          <button class="profile-card__button--flex">
             <img
-              class="profile-card-button-img"
+              class="profile-card__button__icon"
               src="./icons/bookmark.png"
               alt="bookmark icon"
             />
-            <span>4</span>
+            <span class="profile-card__button__counter">12</span>
           </button>
         </div>
-        <div class="profile-card-setting">
-          <h3>Settings</h3>
-          <div class="profile-card-setting-dark">
-            <h4>Dark mode</h4>
-            <input type="checkbox" name="dark" id="" />
+        <div class="profile-card__settings-group">
+          <h3 class="profile-card__settings-group__title">Settings</h3>
+          <div class="profile-card__settings-group__dark-mode-group">
+            <h4 class="profile-card__settings-group__dark-mode-group__title">Dark mode</h4>
+            <input class="profile-card__settings-group__dark-mode-group__check-box"type="checkbox" name="dark" id="" />
           </div>
         </div>
       </div>
