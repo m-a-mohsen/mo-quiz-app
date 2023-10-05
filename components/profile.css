@@ -1,0 +1,51 @@
+.main--profil {
+    /* margin-top: 50px; */
+}
+.profile-container {
+    height: 100vh;
+    width: 100%;
+    
+    background-color: #e0e0e0da;
+    border-radius: 20px;
+    /* margin: 80px var(--padding-medium); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--padding-large);
+}
+.profile-card-pic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border:1px solid #FFCC70 ; */
+}
+.profile-card-about {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-medium);
+}
+.profile-card-button {
+  display: flex;
+  justify-content: space-evenly;
+}
+.button-flex {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--font-color);
+  border-radius: 10px;
+  gap: var(--padding-small);
+  align-items: center;
+}
+.profile-card-button-img {
+  width: 1.5rem;
+}
+.profile-card-setting {
+  display: flex;
+  flex-direction: column;
+}
+.profile-card-setting-dark {
+  display: flex;
+  justify-content: space-between;
+}
