@@ -14,15 +14,15 @@
     <title>📔Mo Quizz</title>
   </head>
 
-  <body>
-    <header class="header">
-      <h1 class="header__title">📔Quiz App</h1>
+  <body class="bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500">
+    <header class="bg-gray-300 w-full sticky top-0">
+      <h1 class="text-center text-3xl">📔Quiz App</h1>
     </header>
-    <main class="main">
-      <div class="card">
+    <main class=" flex-col m-5">
+      <div class="flex-col items-center bg-gray-300 rounded-xl relative ">
         <button class="card__bookmark-button">
           <img
-            class="card__bookmark-button__img"
+            class="absolute -top-2 right-0 w-9"
             src="./icons/bookmark.png"
             alt=""
           />
@@ -52,8 +52,8 @@
         </div>
       </div>
     </main>
-    <footer class="footer">
-      <nav class="nav">
+    <footer class="bg-gray-300">
+      <nav class="flex fixed bottom-0 bg-gray-300 w-full justify-around">
         <a class="nav__link nav--current" href="./index.html">
           <img
             class="nav__icon"
