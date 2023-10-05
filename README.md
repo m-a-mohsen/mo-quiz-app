@@ -20,10 +20,13 @@
 - maybe use Tailwind as design guardrail
 
 ## what I learned
+
 - using excalidarw
 
 ## TODO:
+
 - [x] split code
+
 ---
 
 In this project you will build the layout of your first mobile web application, a quiz app. In later
