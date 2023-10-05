@@ -90,6 +90,9 @@ main{
     box-shadow: inset 20px 20px 60px #9b9b9b,
                 inset -20px -20px 60px #ffffff;
 }
+.hastags span:hover{
+    box-shadow: inset 20px 20px 60px #3f3f3f
+}
 footer{
     z-index: 10;
     background-color: var(--primary-color);
@@ -124,9 +127,54 @@ nav a img{
     height: 1.7rem;
 
 }
+/* ---------------profile------------ */
 .profile-container {
     background-color: #e0e0e0da;
     border-radius: 20px;
     margin: var(--padding-medium);
 }
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--padding-large);
+}
+.profile-card-pic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border:1px solid #FFCC70 ; */
+}
+.profile-card-about{
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-medium);
+}
+.profile-card-button{
+    display: flex;
+    justify-content: space-evenly;
+}
+.button-flex{
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--font-color);
+    border-radius: 10px;
+    gap: var(--padding-small);
+    align-items: center;
 
+}
+.profile-card-button-img {
+    width: 1.5rem;
+}
+.profile-card-setting{
+    display: flex;
+    flex-direction: column;
+}
+.profile-card-setting-dark{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-
