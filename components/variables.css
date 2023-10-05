@@ -1,0 +1,18 @@
+/*--------------- Variables -------------*/
+
+:root {
+  /* --background-color: #e0e0e0; */
+  --background-color: #4158d0;
+  --background-imge: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  --primary-color: #e0e0e0;
+  --secondary-color: #b7a9c4;
+  --font-color: #363636;
+  --padding-medium: 1rem;
+  --padding-small: 0.5rem;
+  --padding-large: 2rem;
+}

@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: stretch; */
+  /* padding: var(--padding-medium); */
+  /* flex-basis: ; */
+}
+.nav__link {
+  display: flex;
+  justify-content: space-around;
+  padding: var(--padding-medium);
+  width: 100%;
+  /* border:1px solid #0f7c14 ; */
+}
+.nav__link:hover {
+  /* border: 2px solid rgb(201, 201, 201); */
+  background-color: #d9dadb;
+}
+.nav--current {
+  background-color: #e0e8ef;
+}
+.nav__icon {
+  /* border:1px solid #FFCC70 ; */
+
+  height: 1.7rem;
+}
