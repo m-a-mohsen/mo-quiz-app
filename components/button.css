@@ -1,6 +1,7 @@
 /* Credits to Barış Doğan Sütçü, https://uiverse.io/barisdogansutcu/black-duck-67 */
 
-button {
+.card__show-answer-button,
+.profile-card__button--flex {
   color: #7e97b8;
   background-color: #e0e8ef;
   border-style: solid;
@@ -15,7 +16,8 @@ button {
     4px 2px 16px 0px rgb(95 157 231 / 48%);
 }
 
-button:hover {
+.card__show-answer-button:hover,
+.profile-card__button--flex:hover {
   color: #516d91;
   background-color: #e5edf5;
   box-shadow:
@@ -23,6 +25,15 @@ button:hover {
     2px 1px 8px 0px rgb(95 157 231 / 48%);
 }
 
-button:active {
+.card__show-answer-button:active,
+.profile-card__button--flex:active
+ {
   box-shadow: none;
+}
+
+.card__bookmark-button{
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  position:absolute;
+  top: -7px;
 }
