@@ -3,75 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
-      rel="stylesheet"
-    />
 
     <link rel="stylesheet" href="styles.css" />
     <title>📔Mo Quizz</title>
   </head>
 
-  <body class="bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500">
-    <header class="bg-gray-300 w-full sticky top-0">
-      <h1 class="text-center text-3xl">📔Quiz App</h1>
+  <body class="bg-gray-200">
+  <!-- <body class="bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500"> -->
+    <!-- header ---start -->
+    <header class="sticky top-0 w-full shadow-xl">
+      <h1 class="p-2 text-center text-3xl text-gray-800 hover:drop-shadow-md cursor-default">
+        📔Quiz App
+      </h1>
     </header>
-    <main class="flex-col items-center m-5">
+    <!-- header ---end-->
+    
+    <main class="m-5 flex flex-col gap-6">
+      <!-- card ---start -->
       <div
-        class="flex-col justify-center items-center content-center bg-gray-300 rounded-xl relative"
+      class="relative flex flex-col items-center justify-between rounded-xl bg-gray-200 p-4 group" 
       >
-        <button>
-          <img
-            class="absolute -top-2 right-0 w-9"
-            src="./icons/bookmark.png"
-            alt=""
-          />
-        </button>
-        <h2 class="font-bold text-center">Do you really like CSS ?</h2>
-        <button class="border-red-500 border">Show answer</button>
-        <div class="card__hastag-container">
-          <span class="card__hastag">#CSS</span>
-          <span class="card__hastag">#flexbox</span>
-          <span class="card__hastag">#what the hell!</span>
-        </div>
+      <div class="absolute -inset-0.5 bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 -z-10 rounded-xl blur opacity-70 group-hover:-inset-1"></div>
+      <button>
+        <img
+        class="absolute -top-2 right-3 w-9 drop-shadow-md hover:drop-shadow-xl"
+        src="./icons/bookmark.png"
+        alt=""
+        />
+      </button>
+      <h2 class="text-3xl font-black bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent drop-shadow-inner capitalize py-6">
+        Do you really like CSS ?
+      </h2>
+      <button class="cursor-pointer transition-all 
+      bg-gray-300 text-gray-700 px-6  rounded-lg
+      border-fuchsia-500
+      border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+      active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-fuchsia-300 shadow-fuchsia-500 active:shadow-none mb-4">Show answer</button>
+      <hr class="h-px w-full px-4 bg-gray-300 border-0 m-2 ">
+      <div class="mt-2 self-start text-gray-600 ">
+        <span class="py-0.5 bg-gray-200 shadow-[inset_0px_-0px_3px_2px_#00000024] px-2 rounded-lg hover:bg-gray-300 cursor-default">#CSS</span>
+        <span class="py-0.5 bg-gray-200 shadow-[inset_0px_-0px_3px_2px_#00000024] px-2 rounded-lg hover:bg-gray-300 cursor-default">#flexbox</span>
+        <span class="py-0.5 bg-gray-200 shadow-[inset_0px_-0px_3px_2px_#00000024] px-2 rounded-lg hover:bg-gray-300 cursor-default">#what the hell!</span>
       </div>
-      <div class="card">
-        <button class="card__bookmark-button">
-          <img
-            class="card__bookmark-button__img"
-            src="./icons/bookmark_filled.png"
-            alt=""
-          />
-        </button>
-        <h2 class="card__title">Do you really like CSS ?</h2>
-        <button class="card__show-answer-button">Show answer</button>
-        <div class="card__hastag-container">
-          <span class="card__hastag">#CSS</span>
-          <span class="card__hastag">#flexbox</span>
-          <span class="card__hastag">#what the hell!</span>
-        </div>
+    </div>
+    <!-- card ---end -->
+      <!-- card ---start -->
+      <div
+      class="relative flex flex-col items-center justify-between rounded-xl bg-gray-200 p-4 group" 
+      >
+      <div class="absolute -inset-0.5 bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 -z-10 rounded-xl blur opacity-70 group-hover:-inset-1"></div>
+      <button>
+        <img
+        class="absolute -top-2 right-3 w-9 drop-shadow-md hover:drop-shadow-xl"
+        src="./icons/bookmark_filled.png"
+        alt=""
+        />
+      </button>
+      <h2 class="text-3xl font-black bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent drop-shadow-inner capitalize py-6">
+        Do you really like CSS ?
+      </h2>
+      <button class="cursor-pointer transition-all 
+      bg-gray-300 text-gray-700 px-6  rounded-lg
+      border-fuchsia-500
+      border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+      active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-fuchsia-300 shadow-fuchsia-500 active:shadow-none mb-4">Show answer</button>
+      <hr class="h-px w-full px-4 bg-gray-300 border-0 m-2 ">
+      <div class="mt-2 self-start text-gray-600 ">
+        <span class="py-0.5 bg-gray-200 shadow-[inset_0px_-0px_3px_2px_#00000024] px-2 rounded-lg hover:bg-gray-300 cursor-default">#CSS</span>
+        <span class="py-0.5 bg-gray-200 shadow-[inset_0px_-0px_3px_2px_#00000024] px-2 rounded-lg hover:bg-gray-300 cursor-default">#flexbox</span>
+        <span class="py-0.5 bg-gray-200 shadow-[inset_0px_-0px_3px_2px_#00000024] px-2 rounded-lg hover:bg-gray-300 cursor-default">#what the hell!</span>
       </div>
+    </div>
+    <!-- card ---end -->
+
     </main>
-    <footer class="bg-gray-300">
-      <nav class="flex fixed bottom-0 bg-gray-300 w-full justify-around">
-        <a class="nav__link nav--current" href="./index.html">
+    <footer class="">
+      <nav class="fixed bottom-0 flex w-full justify-around p-3 shadow-[0_-20px_13px_rgba(0,0,0,0.08)] ">
+        <a class="" href="./index.html">
           <img
-            class="nav__icon"
+            class="w-9"
             src="./icons/home_filled.png"
             alt="Home icon"
           />
         </a>
-        <a class="nav__link" href="./bookmarks.html">
+        <a class="" href="./bookmarks.html">
           <img
-            class="nav__icon"
+            class="w-9"
             src="./icons/bookmark_transparent.png"
             alt="bookmark icon"
           />
         </a>
         <a class="nav__link" href="./profile.html">
-          <img class="nav__icon" src="./icons/profile.png" alt="profile icon" />
+          <img class="w-9" src="./icons/profile.png" alt="profile icon" />
         </a>
       </nav>
     </footer>
