@@ -21,9 +21,14 @@
     </header>
     <!-- header ---end-->
 
-    <main class="m-5 flex flex-col gap-6">
-      <form action="submit" class="flex flex-col gap-2" data-js="form" name="form">
-        <fieldset>
+    <main class="m-5 flex flex-col gap-6" data-js="main">
+      <form
+        action="submit"
+        class="flex flex-col gap-4"
+        data-js="form"
+        name="form"
+      >
+        <fieldset class="flex flex-col">
           <label for="yourQuestion">Your Question:</label>
           <textarea
             name="yourQuestion"
@@ -33,7 +38,7 @@
             autofocus
           ></textarea>
         </fieldset>
-        <fieldset>
+        <fieldset class="flex flex-col">
           <label for="yourAnswer">Your answer:</label>
           <textarea
             name="yourAnswer"
@@ -53,6 +58,9 @@
           Submit
         </button>
       </form>
+      <div data-js="newCards" class="m-5 flex flex-col gap-6 relative">
+
+      </div>
     </main>
     <footer class="">
       <nav
@@ -65,7 +73,7 @@
             viewBox="0 0 24 24"
             stroke-width="1"
             stroke="currentColor"
-            class="h-10 w-10 hover:fill-slate-50"
+            class="h-10 w-10 hover:fill-slate-50 hover:scale-150 transition duration-300"
           >
             <path
               stroke-linecap="round"
@@ -81,7 +89,7 @@
             viewBox="0 0 24 24"
             stroke-width="1"
             stroke="currentColor"
-            class="h-10 w-10 transition-all duration-300 ease-in-out hover:scale-150 hover:fill-slate-50"
+            class="h-10 w-10 transition-all duration-300 ease-in-out hover:scale-150 hover:fill-slate-50 hover:scale-150 transition duration-300"
           >
             <path
               stroke-linecap="round"
@@ -97,7 +105,7 @@
             viewBox="0 0 24 24"
             stroke-width="1"
             stroke="currentColor"
-            class="h-10 w-10 hover:fill-slate-50"
+            class="h-10 w-10 scale-150 fill-slate-50 hover:scale-150 transition duration-300"
           >
             <path
               stroke-linecap="round"
@@ -113,7 +121,7 @@
             viewBox="0 0 24 24"
             stroke-width="1"
             stroke="currentColor"
-            class="h-10 w-10 hover:fill-slate-50"
+            class="h-10 w-10 hover:fill-slate-50 hover:scale-150 transition duration-300"
           >
             <path
               stroke-linecap="round"

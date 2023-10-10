@@ -24,32 +24,33 @@
     <main class="m-5 flex flex-col gap-6">
       <!-- card ---start -->
       <div
-        class="group relative flex flex-col items-center justify-between rounded-xl bg-gray-100 p-4 hover:bg-white"
+        class="group relative flex flex-col items-center justify-between rounded-xl bg-gray-100 p-4 hover:bg-white transition duration-500"
       >
         <div
-          class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 opacity-70 blur-sm group-hover:-inset-1"
+          class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 opacity-70 blur-sm group-hover:-inset-1 transition duration-500"
         ></div>
         <button>
-          <img
+          <!-- <img
             class="absolute -top-2 right-3 w-9 drop-shadow-md hover:drop-shadow-xl"
             src="./icons/bookmark.png"
             alt="bookmark icon"
             data-js="bookmark"
-          />
-          <!-- <svg
+          /> -->
+          <svg
+          data-js="svgBookmark"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1"
             stroke="currentColor"
-            class="h-10 w-10 absolute right-2 -top-4 fill-slate-50"
+            class="h-10 w-10 absolute right-2 -top-4 fill-slate-50 hover:fill-lime-500 hover:scale-110 transition duration-300"
           >
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
               d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
             />
-          </svg> -->
+          </svg>
         </button>
         <h2
           class="drop-shadow-inner bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-clip-text py-6 text-3xl font-black capitalize text-transparent"
@@ -134,7 +135,7 @@ Show answer
             viewBox="0 0 24 24"
             stroke-width="1"
             stroke="currentColor"
-            class="h-10 w-10 hover:fill-slate-50"
+            class="h-10 w-10 scale-150 fill-slate-50 "
           >
             <path
               stroke-linecap="round"
@@ -150,7 +151,7 @@ Show answer
             viewBox="0 0 24 24"
             stroke-width="1"
             stroke="currentColor"
-            class="h-10 w-10 hover:fill-slate-50"
+            class="h-10 w-10 hover:fill-slate-50 hover:scale-150 transition duration-300"
           >
             <path
               stroke-linecap="round"
@@ -166,7 +167,7 @@ Show answer
             viewBox="0 0 24 24"
             stroke-width="1"
             stroke="currentColor"
-            class="h-10 w-10 hover:fill-slate-50"
+            class="h-10 w-10 hover:fill-slate-50 hover:scale-150 transition duration-300"
           >
             <path
               stroke-linecap="round"
@@ -182,7 +183,7 @@ Show answer
             viewBox="0 0 24 24"
             stroke-width="1"
             stroke="currentColor"
-            class="h-10 w-10 hover:fill-slate-50"
+            class="h-10 w-10 hover:fill-slate-50 hover:scale-150 transition duration-300"
           >
             <path
               stroke-linecap="round"

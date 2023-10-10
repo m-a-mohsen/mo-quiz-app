@@ -1,14 +1,16 @@
 // toggle functionality of bookmark
 const bookmarkCardButton = document.querySelector('[data-js="bookmark"]')
+const svgBookmark = document.querySelector('[data-js="svgBookmark"]')
+console.log(svgBookmark);
 
-bookmarkCardButton.addEventListener('click', () => {
-    const bookmarkStatus = bookmarkCardButton.getAttribute('src')
-    if (bookmarkStatus === "./icons/bookmark.png") {
-    bookmarkCardButton.setAttribute("src", "./icons/bookmark_filled.png");
-} else {
-    bookmarkCardButton.setAttribute("src", "./icons/bookmark.png");   
-}
-})
+// bookmarkCardButton.addEventListener('click', () => {
+//     const bookmarkStatus = bookmarkCardButton.getAttribute('src')
+//     if (bookmarkStatus === "./icons/bookmark.png") {
+//     bookmarkCardButton.setAttribute("src", "./icons/bookmark_filled.png");
+// } else {
+//     bookmarkCardButton.setAttribute("src", "./icons/bookmark.png");   
+// }
+// })
 // SHOW answer toggle
 
 const showAnswerButton = document.querySelector('[data-js="showAnswer"]');
