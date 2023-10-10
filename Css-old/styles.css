@@ -1,0 +1,16 @@
+@import url("global.css");
+@import url("./components/button.css");
+@import url("./components/card.css");
+@import url("./components/navigation.css");
+@import url("./components/profile.css");
+@import url("./components/variables.css");
+
+
+/*---------------CSS reset -------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
