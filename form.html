@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./js/form.js" defer></script>
+    <title>📔Mo Quizz</title>
+  </head>
+
+  <body class="bg-gray-200">
+    <!-- <body class="bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500"> -->
+    <!-- header ---start -->
+    <header class="sticky top-0 w-full shadow-xl">
+      <h1
+        class="cursor-default p-2 text-center text-3xl text-gray-800 hover:drop-shadow-md"
+      >
+        📔Quiz App
+      </h1>
+    </header>
+    <!-- header ---end-->
+
+    <main class="m-5 flex flex-col gap-6" data-js="main">
+      <form
+        action="submit"
+        class="flex flex-col gap-4"
+        data-js="form"
+        name="form"
+      >
+        <fieldset class="flex flex-col">
+          <label for="yourQuestion">Your Question:</label>
+          <textarea
+          data-js="questionInput"
+            name="yourQuestion"
+            id="yourQuestion"
+            cols="50"
+            rows="5"
+            autofocus
+            maxlength="150"
+            ></textarea>
+          <span data-js="questionCounter" class="self-end">150 characters left</span>
+          </fieldset>
+          <fieldset class="flex flex-col">
+            <label for="yourAnswer">Your answer:</label>
+            <textarea
+            data-js="answerInput"
+            name="yourAnswer"
+            id="yourAnswer"
+            cols="50"
+            rows="5"
+            maxlength="150"
+            ></textarea>
+            <span data-js="answerCounter" class="self-end">150 characters left</span>
+        </fieldset>
+        <fieldset class="flex flex-col">
+          <label for="tag">Tag:</label>
+          <input type="text" name="tag" id="tag" />
+        </fieldset>
+        <button
+          type="submit"
+          class="before:duration-450 relative my-3 flex h-10 w-24 cursor-pointer items-center justify-center self-center overflow-hidden rounded-xl bg-gray-300 from-rose-400 via-fuchsia-500 to-indigo-500 font-bold text-gray-900 opacity-80 shadow-md transition-all duration-500 ease-in-out before:absolute before:-left-full before:top-0 before:z-[-1] before:h-full before:w-full before:rounded-xl before:bg-gradient-to-r before:transition-all before:ease-in-out hover:scale-110 hover:shadow-lg hover:before:left-0"
+        >
+          Submit
+        </button>
+      </form>
+      <div data-js="newCards" class="m-5 flex flex-col gap-6 relative">
+
+      </div>
+    </main>
+    <footer class="">
+      <nav
+        class="fixed bottom-0 flex w-full justify-around p-3 shadow-[0_-20px_13px_rgba(0,0,0,0.08)]"
+      >
+        <a class="" href="./index.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="currentColor"
+            class="h-10 w-10 hover:fill-slate-50 hover:scale-150 transition duration-300"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+            />
+          </svg>
+        </a>
+        <a class="" href="./bookmarks.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="currentColor"
+            class="h-10 w-10 transition-all duration-300 ease-in-out hover:scale-150 hover:fill-slate-50 hover:scale-150 transition duration-300"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+            />
+          </svg>
+        </a>
+        <a class="" href="./form.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="currentColor"
+            class="h-10 w-10 scale-150 fill-slate-50 hover:scale-150 transition duration-300"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </a>
+        <a class="nav__link" href="./profile.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="currentColor"
+            class="h-10 w-10 hover:fill-slate-50 hover:scale-150 transition duration-300"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+          </svg>
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>

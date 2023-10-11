@@ -5,96 +5,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="styles.css" />
+    <script src="./js/index.js" defer></script>
     <title>📔Mo Quizz</title>
   </head>
 
   <body class="bg-gray-200">
-  <!-- <body class="bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500"> -->
+    <!-- <body class="bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500"> -->
     <!-- header ---start -->
     <header class="sticky top-0 w-full shadow-xl">
-      <h1 class="p-2 text-center text-3xl text-gray-800 hover:drop-shadow-md cursor-default">
+      <h1
+        class="cursor-default p-2 text-center text-3xl text-gray-800 hover:drop-shadow-md"
+      >
         📔Quiz App
       </h1>
     </header>
     <!-- header ---end-->
-    
+
     <main class="m-5 flex flex-col gap-6">
       <!-- card ---start -->
       <div
-      class="relative flex flex-col items-center justify-between rounded-xl bg-gray-100 p-4 group hover:bg-white" 
+        class="group relative flex flex-col items-center justify-between rounded-xl bg-gray-100 p-4 hover:bg-white transition duration-500"
       >
-      <div class="absolute inset-0 bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 -z-10 rounded-xl blur-sm opacity-70 group-hover:-inset-1"></div>
-      <button>
-        <img
-        class="absolute -top-2 right-3 w-9 drop-shadow-md hover:drop-shadow-xl"
-        src="./icons/bookmark.png"
-        alt=""
-        />
-      </button>
-      <h2 class="text-3xl font-black bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent drop-shadow-inner capitalize py-6">
-        Do you really like CSS ?
-      </h2>
-      <button class="cursor-pointer transition-all 
-      bg-gray-300 text-gray-700 px-6  rounded-lg
-      border-fuchsia-500
-      border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
-      active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-fuchsia-300 shadow-fuchsia-500 active:shadow-none mb-4">Show answer</button>
-      <hr class="h-px w-full px-4 bg-gray-300 border-0 m-2 ">
-      <div class="mt-2 self-start text-gray-600 ">
-        <span class="py-0.5 bg-gray-200 shadow-[inset_0px_-0px_3px_2px_#00000024] px-2 rounded-lg hover:bg-gray-300 cursor-default">#CSS</span>
-        <span class="py-0.5 bg-gray-200 shadow-[inset_0px_-0px_3px_2px_#00000024] px-2 rounded-lg hover:bg-gray-300 cursor-default">#flexbox</span>
-        <span class="py-0.5 bg-gray-200 shadow-[inset_0px_-0px_3px_2px_#00000024] px-2 rounded-lg hover:bg-gray-300 cursor-default">#what the hell!</span>
+        <div
+          class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 opacity-70 blur-sm group-hover:-inset-1 group-transition duration-500"
+        ></div>
+        <button>
+          <!-- <img
+            class="absolute -top-2 right-3 w-9 drop-shadow-md hover:drop-shadow-xl"
+            src="./icons/bookmark.png"
+            alt="bookmark icon"
+            data-js="bookmark"
+          /> -->
+          <svg
+          data-js="svgBookmark"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="0.3"
+            stroke="currentColor"
+            class="h-10 w-10 absolute right-2 -top-4 stroke-gray-700 fill-slate-50 hover:fill-lime-500 hover:scale-110 transition duration-300"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+            />
+          </svg>
+        </button>
+        <h2
+          class="drop-shadow-inner bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-clip-text py-6 text-3xl font-black capitalize text-transparent"
+        >
+          Do you really like CSS ?
+        </h2>
+        <button
+          data-js="showAnswer"
+          class="mb-4 cursor-pointer rounded-lg border-b-[4px] border-fuchsia-500 bg-gray-300 px-6 text-gray-700 shadow-fuchsia-500 transition-all hover:-translate-y-[1px] hover:border-b-[6px] hover:shadow-xl hover:shadow-fuchsia-300 hover:brightness-110 active:translate-y-[2px] active:border-b-[2px] active:shadow-none active:brightness-90"
+        >
+Show answer
+        </button>
+        <span data-js="answer" hidden><b class="text-gray-600">Answer :</b> I have no idea</span>
+        <hr class="m-2 h-px w-full border-0 bg-gray-300 px-4" />
+        <div class="mt-2 self-start text-gray-600">
+          <span
+            class="cursor-default rounded-lg bg-gray-200 px-2 py-0.5 shadow-[inset_0px_-0px_3px_2px_#00000024] hover:bg-gray-300"
+            >#CSS</span
+          >
+          <span
+            class="cursor-default rounded-lg bg-gray-200 px-2 py-0.5 shadow-[inset_0px_-0px_3px_2px_#00000024] hover:bg-gray-300"
+            >#flexbox</span
+          >
+          <span
+            class="cursor-default rounded-lg bg-gray-200 px-2 py-0.5 shadow-[inset_0px_-0px_3px_2px_#00000024] hover:bg-gray-300"
+            >#what the hell!</span
+          >
+        </div>
       </div>
-    </div>
-    <!-- card ---end -->
+      <!-- card ---end -->
       <!-- card ---start -->
       <div
-      class="relative flex flex-col items-center justify-between rounded-xl hover:bg-white bg-gray-100 p-4 group" 
+        class="group relative flex flex-col items-center justify-between rounded-xl bg-gray-100 p-4 hover:bg-white"
       >
-      <div class="absolute inset-0 bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 -z-10 rounded-xl blur-sm opacity-70 group-hover:-inset-1"></div>
-      <button>
-        <img
-        class="absolute -top-2 right-3 w-9 drop-shadow-md hover:drop-shadow-xl"
-        src="./icons/bookmark_filled.png"
-        alt=""
-        />
-      </button>
-      <h2 class="text-3xl font-black bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent drop-shadow-inner capitalize py-6">
-        Do you really like CSS ?
-      </h2>
-      <button class="cursor-pointer transition-all 
-      bg-gray-300 text-gray-700 px-6  rounded-lg
-      border-fuchsia-500
-      border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
-      active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-fuchsia-300 shadow-fuchsia-500 active:shadow-none mb-4">Show answer</button>
-      <hr class="h-px w-full px-4 bg-gray-300 border-0 m-2 ">
-      <div class="mt-2 self-start text-gray-600 ">
-        <span class="py-0.5 bg-gray-200 shadow-[inset_0px_-0px_3px_2px_#00000024] px-2 rounded-lg hover:bg-gray-300 cursor-default">#CSS</span>
-        <span class="py-0.5 bg-gray-200 shadow-[inset_0px_-0px_3px_2px_#00000024] px-2 rounded-lg hover:bg-gray-300 cursor-default">#flexbox</span>
-        <span class="py-0.5 bg-gray-200 shadow-[inset_0px_-0px_3px_2px_#00000024] px-2 rounded-lg hover:bg-gray-300 cursor-default">#what the hell!</span>
-      </div>
-    </div>
-    <!-- card ---end -->
+        <div
+          class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 opacity-70 blur-sm group-hover:-inset-1"
+        ></div>
+        <button>
+          <img
+            class="absolute -top-2 right-3 w-9 drop-shadow-md hover:drop-shadow-xl"
+            src="./icons/bookmark_filled.png"
+            alt=""
+          />
+        </button>
+        <h2
+          class="drop-shadow-inner bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-clip-text py-6 text-3xl font-black capitalize text-transparent"
+        >
+          Do you really like CSS ?
+        </h2>
+        <button
+          class="mb-4 cursor-pointer rounded-lg border-b-[4px] border-fuchsia-500 bg-gray-300 px-6 text-gray-700 shadow-fuchsia-500 transition-all hover:-translate-y-[1px] hover:border-b-[6px] hover:shadow-xl hover:shadow-fuchsia-300 hover:brightness-110 active:translate-y-[2px] active:border-b-[2px] active:shadow-none active:brightness-90"
+        >
+          Show answer
+        </button>
 
+        <hr class="m-2 h-px w-full border-0 bg-gray-300 px-4" />
+        <div class="mt-2 self-start text-gray-600">
+          <span
+            class="cursor-default rounded-lg bg-gray-200 px-2 py-0.5 shadow-[inset_0px_-0px_3px_2px_#00000024] hover:bg-gray-300"
+            >#CSS</span
+          >
+          <span
+            class="cursor-default rounded-lg bg-gray-200 px-2 py-0.5 shadow-[inset_0px_-0px_3px_2px_#00000024] hover:bg-gray-300"
+            >#flexbox</span
+          >
+          <span
+            class="cursor-default rounded-lg bg-gray-200 px-2 py-0.5 shadow-[inset_0px_-0px_3px_2px_#00000024] hover:bg-gray-300"
+            >#what the hell!</span
+          >
+        </div>
+      </div>
+      <!-- card ---end -->
     </main>
     <footer class="">
-      <nav class="fixed bottom-0 flex w-full justify-around p-3 shadow-[0_-20px_13px_rgba(0,0,0,0.08)] ">
+      <nav
+        class="fixed bottom-0 flex w-full justify-around p-3 shadow-[0_-20px_13px_rgba(0,0,0,0.08)]"
+      >
         <a class="" href="./index.html">
-          <img
-            class="w-9"
-            src="./icons/home_filled.png"
-            alt="Home icon"
-          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="currentColor"
+            class="h-10 w-10 scale-150 fill-slate-50 "
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+            />
+          </svg>
         </a>
         <a class="" href="./bookmarks.html">
-          <img
-            class="w-9"
-            src="./icons/bookmark_transparent.png"
-            alt="bookmark icon"
-          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="currentColor"
+            class="h-10 w-10 hover:fill-slate-50 hover:scale-150 transition duration-300"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+            />
+          </svg>
+        </a>
+        <a class="" href="./form.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="currentColor"
+            class="h-10 w-10 hover:fill-slate-50 hover:scale-150 transition duration-300"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
         </a>
         <a class="nav__link" href="./profile.html">
-          <img class="w-9" src="./icons/profile.png" alt="profile icon" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="currentColor"
+            class="h-10 w-10 hover:fill-slate-50 hover:scale-150 transition duration-300"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+          </svg>
         </a>
       </nav>
     </footer>
