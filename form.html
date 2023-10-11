@@ -31,21 +31,27 @@
         <fieldset class="flex flex-col">
           <label for="yourQuestion">Your Question:</label>
           <textarea
+          data-js="questionInput"
             name="yourQuestion"
             id="yourQuestion"
             cols="50"
             rows="5"
             autofocus
-          ></textarea>
-        </fieldset>
-        <fieldset class="flex flex-col">
-          <label for="yourAnswer">Your answer:</label>
-          <textarea
+            maxlength="150"
+            ></textarea>
+          <span data-js="questionCounter" class="self-end">150 characters left</span>
+          </fieldset>
+          <fieldset class="flex flex-col">
+            <label for="yourAnswer">Your answer:</label>
+            <textarea
+            data-js="answerInput"
             name="yourAnswer"
             id="yourAnswer"
             cols="50"
             rows="5"
-          ></textarea>
+            maxlength="150"
+            ></textarea>
+            <span data-js="answerCounter" class="self-end">150 characters left</span>
         </fieldset>
         <fieldset class="flex flex-col">
           <label for="tag">Tag:</label>
